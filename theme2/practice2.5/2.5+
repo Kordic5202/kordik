@@ -1,0 +1,8 @@
+CREATE TABLE Officers (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    Rank VARCHAR(50),
+    Unit_ID INT,
+    Date_Assigned DATE,
+    FOREIGN KEY (Unit_ID) REFERENCES Units(Unit_ID)
+);
